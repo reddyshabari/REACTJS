@@ -61,7 +61,7 @@ function App() {
     <Routes>
     {/* /users --> Component 1
         /users/home --> Component 2 */}
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About mode={mode} />} />
           <Route path="/" element={  
           <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
           }/>
