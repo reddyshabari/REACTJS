@@ -1,0 +1,9 @@
+npx create-react-app newsapp => To create app
+npm start=>to start the server
+cd=>command directory
+//cd newsapp
+we can refer react documentation
+newsapp=>used react class based components 
+textutils=>used react function based components
+1.remove all function based component in app.js for newsapp
+rcc+enter=>gives react component
