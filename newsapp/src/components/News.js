@@ -54,21 +54,15 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-4">
-        <h2>Top headlines</h2>
+
+        <h2>NewsMonkey - Top headlines</h2>
         <div className="row">
-          <div className="col-md-4">
-          <NewsItem title="myTitle" description="mydesc" imageUrl="https://clipground.com/images/newspaper-vector-png-8.png"/>
+            {this.state.articles.map((element)=>{
+              return <div className="col md-4" key={element.url}>
+          <NewsItem title={element.title.slice(0,8)} description={element.description.slice(0,88)} imageUrl={element.urlToImage} url={element.url}/>
           </div>
-          <div className="col-md-4">
-          <NewsItem title="myTitle" description="mydesc"/>
-          </div>
-          <div className="col-md-4">
-          <NewsItem title="myTitle" description="mydesc"/>
-          </div>
-            
-
-
-            </div>
+          })}
+        </div>
       </div>
     )
   }
